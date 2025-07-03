@@ -48,3 +48,10 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+      - name: Delete artifact
+        uses: actions/delete-pages-artifact@v1
+        with:
+          # Optional: Specify the artifact name if needed
+          name: github-pages
+
