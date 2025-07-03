@@ -23,3 +23,11 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.add("getBoardStatus", () => {
+  return cy.get(".game-board .status");
+});
+
+Cypress.Commands.add("getGameTileList", () => {
+  return cy.get(".game-board button.square");
+});

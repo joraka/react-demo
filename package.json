@@ -5,9 +5,15 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "start": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "cy:open": "cypress open",
+    "test": "cypress open",
+    "cy:run": "cypress run",
+    "cy:dev-o": "start-server-and-test dev http://localhost:5173 cy:open",
+    "cy:dev-r": "start-server-and-test dev http://localhost:5173 cy:run"
   },
   "dependencies": {
     "react": "^19.1.0",
