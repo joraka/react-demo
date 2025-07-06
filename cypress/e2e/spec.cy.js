@@ -172,7 +172,7 @@ describe("Test case 3: Win conditions", () => {
     cy.getBoardStatus().should("have.text", "Winner: X");
   });
 
-  it("should detect middle vertical win", () => {
+  it("should detect right vertical win", () => {
     cy.getGameTileList().then(($tileList) => {
       let index = 2;
       cy.wrap($tileList).eq(index).click();
